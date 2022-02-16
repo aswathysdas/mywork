@@ -9,10 +9,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-    $trp = mysqli_query($conn, "SELECT * from statetbl");
+    $trp = mysqli_query($conn, "SELECT * FROM statetbl");
     $rows = array();
     while($r = mysqli_fetch_assoc($trp)) {
         $rows[] = $r;
     }
+    $ftr=mysqli_query($conn,"SELECT * FROM cntrytbl WHERE fk_int_id=pk_int_id");
+      $rows=array();
+      while($k=mysqli_fetch_assoc($ftr)){
+         $rows[]=$k;
+     }
     print json_encode($rows); //convert php data to json data
 ?>
