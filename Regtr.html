@@ -10,13 +10,16 @@
   <input type="text" name="email" id="emailAddress">
 
 <select>
-<option><?php echo $row1['$']; ?> </option>
-
+<optgroup>
+<option><?php echo $row1['vchr_state']; ?> </option>
+</optgroup>
 </select>
-
-
-
-
+<select>
+<optgroup>
+<option><?php echo $row1['vchr_cntry'];?>
+</option>
+</optgroup>
+</select>
 <input type="submit" value="Submit">
 </form>
 </HTML>
