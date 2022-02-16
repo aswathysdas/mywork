@@ -14,6 +14,7 @@ if ($conn->connect_error) {
     while($r = mysqli_fetch_assoc($trp)) {
         $rows[] = $r;
     }
+     $output='';
     $ftr=mysqli_query($conn,"SELECT * FROM cntrytbl WHERE fk_int_id=$output");
       $rows=array();
       while($k=mysqli_fetch_assoc($ftr)){
