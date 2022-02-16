@@ -7,7 +7,7 @@ function validation (){
 
         var email = document.forms["RegForm"]["EMail"]; 
 
-        var phone = document.forms["RegForm"]["Telephone"]; 
+        var ph = document.forms["RegForm"]["phone number"]; 
 
         var what = document.forms["RegForm"]["Subject"]; 
 
@@ -24,14 +24,30 @@ function validation (){
             return false; 
 
       }
+  
+if (isNaN(phone number)){  
+  document.getElementById("ph").innerHTML="Enter Numeric value only";  
+  return false;  
+}else{  
+  return true; 
+if (phone number == "") { 
+
+            window.alert( 
+
+              "Please enter your telephone number."); 
+
+            phone.focus(); 
+
+            return false; 
+
+        } 
+
 
 }
 </script>
   <form action="/Xampp.php" method="GET" name="RegForm">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
   <label for="phonenumber">Phone Number</label>
   <input type="text" id="ph" name="phone number"><br><br>
   <label for="emailAddress">Email Address:</label>
