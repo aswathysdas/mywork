@@ -12,8 +12,8 @@
 <select>
 <optgroup>
 <option>
-<?
-  php echo $rows['vchr_state']; 
+<?php 
+  //echo $rows['vchr_state']; 
   $rows= array();
 
 $output = '';
@@ -29,7 +29,16 @@ for( $i=0; $i<count($rows); $i++ ) {
 </select>
 <select>
 <optgroup>
-<option><?php echo $rows['vchr_cntry'];?>
+<option>
+<?php 
+If($output=fk_int_id)
+{
+
+echo $rows['vchr_cntry'];
+
+}
+ I
+?>
 </option>
 </optgroup>
 </select>
