@@ -11,7 +11,20 @@
 
 <select>
 <optgroup>
-<option><?php echo $rows['vchr_state']; ?> </option>
+<option>
+<?
+  php echo $rows['vchr_state']; 
+  $rows= array();
+
+$output = '';
+for( $i=0; $i<count($rows); $i++ ) {
+  $output .= '<option ' 
+             . ( $_GET['sel'] == $rows[$i] ? 'selected="selected"' : '' ) . '>' 
+             . $rows[$i] 
+             . '</option>';
+}
+
+?> </option>
 </optgroup>
 </select>
 <select>
