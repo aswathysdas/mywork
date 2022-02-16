@@ -1,5 +1,37 @@
 <HTML>
-  <form action="/Xampp.php" method="get">
+
+<script>
+function validation (){
+
+        var name = document.forms["RegForm"]["Name"]; 
+
+        var email = document.forms["RegForm"]["EMail"]; 
+
+        var phone = document.forms["RegForm"]["Telephone"]; 
+
+        var what = document.forms["RegForm"]["Subject"]; 
+
+        var password = document.forms["RegForm"]["Password"]; 
+
+        var address = document.forms["RegForm"]["Address"]; 
+
+  
+
+        if (name.value == "") { 
+
+            window.alert("Please enter your name."); 
+
+            name.focus(); 
+
+            return false; 
+
+        } 
+
+  
+
+}
+</script>
+  <form action="/Xampp.php" method="GET" name="RegForm">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
   <label for="lname">Last name:</label>
@@ -42,6 +74,6 @@ echo "nothing selected";
 </option>
 </optgroup>
 </select>
-<input type="submit" value="Submit">
+<input type="submit" value="Submit" onClick="validation ();">
 </form>
 </HTML>
