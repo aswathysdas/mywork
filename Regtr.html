@@ -17,7 +17,7 @@
   $rows= array();
 
 $output = '';
-for( $i=0; $i<count($rows); $i++ ) {
+for( $i=1; $i<count($rows); $i++ ) {
   $output .= '<option ' 
              . ( $_GET['sel'] == $rows[$i] ? 'selected="selected"' : '' ) . '>' 
              . $rows[$i] 
@@ -31,7 +31,13 @@ for( $i=0; $i<count($rows); $i++ ) {
 <optgroup>
 <option>
 <?php 
+If($output=$rows[2])
+{
 echo $rows['vchr_cntry'];
+}
+else{
+echo "nothing selected";
+}
 ?>
 </option>
 </optgroup>
