@@ -62,7 +62,7 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
   <label for="emailAddress">Email Address:</label>
   <input type="text" name="email" id="emailAddress">
 <fielset class="col-sm-6">
-<select name="mnp">
+<select id="mnp">
 <optgroup>
 <option>
 <?php 
