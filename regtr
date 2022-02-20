@@ -2,6 +2,11 @@
 <html>
 
 <script>
+$(document).ready(function(){
+  $("mnp").click(function(){
+    $(this).hide();
+  });
+});
 function validation (){
 
         var name = document.forms["RegForm"]["fname"]; 
