@@ -3,8 +3,7 @@
 
 <script>
 $(document).ready(function(){
-  $("mnp").click(function(){
-    $(this).hide();
+  $("mnp").load($rows);
   });
 });
 function validation (){
