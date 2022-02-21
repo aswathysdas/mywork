@@ -10,7 +10,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$pp="INSERT INTO.$regtr.($id,$nm,$ph,$email,$varcharstat,$varcharcntry).VALUES.($fname,$ph,$emailAddress,$mnp,$cntry);
+$pp="INSERT INTO.$regtr.($id,$nm,$ph,$email,$varcharstat,$varcharcntry).VALUES.($fname,$ph,$emailAddress,$mnp,$cntry)";
    $pp=mysqli_query($conn,$pp);
    $row=array();
 
