@@ -10,7 +10,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$pp=mysqli_query($conn,"INSERT INTO tblname VALUES ()
+$pp="INSERT INTO.$VALUES ()
     $trp = mysqli_query($conn, "SELECT * FROM statetbl");
     $rows = array();
     while($r = mysqli_fetch_assoc($trp)) {
